@@ -9,7 +9,7 @@ while true; do
 printf "\033[1;34mENTER YOUR OPTION HEAR==> \033[0m"
 read opt
 
-if [[ $opt == 'enter' || $opt == 'ENTER' ]]; then
+if [[ $opt == 'update' || $opt == 'UPDATE' ]]; then
 echo
 printf "\033[1;36mPLEASE WAIT \033[0m\n"
 echo

@@ -234,6 +234,107 @@ fi
 done
 echo
 
+printf "\033[1;34menter>type ENTER to enter \033[0m\n"
+printf "\033[1;34mexit>type EXIT to exit \033[0m\n"
+echo
+while true; do
+printf "\033[1;36menter your option hear==> \033[0m"
+read non
+
+if [[ $non == 'enter' || $non == 'ENTER' ]]; then
+echo
+printf "\033[1;43mCHAPTER-6 \033[0m\n"
+
+printf "\033[1;36m(*)in these chapter we can learn how to add \033[0m\n"
+printf "\033[1;36mvariables in our script ok \033[0m\n"
+echo
+echo -e "
+(#!/usr/bin/env bash
+name='noname'
+echo 'my name is ${name}'
+
+RESULT==>my name is noname
+
+(it printed noname in the portion of name ok))
+
+	((OR))
+echo 'what is your name==>'
+read name
+echo 'welcome ${name} to my script'
+(in these we can enter any name so the. result is if i typed my name
+noname it will say welcome noname to my script ok)" | pv -qL 100 | lolcat
+break
+
+elif [[ $non == 'exit' || $non == 'EXIT' ]]; then
+echo
+printf "\033[1;31mYOU ARE EXITED \033[0m\n"
+exit 1
+
+else
+printf "\033[1;41m[!] PLEASE SELECT A VALID OPTION \033[0m\n"
+fi
+done
+echo
+printf "\033[1;36menter>type ENTER to continue \033[0m\n"
+printf "\033[1;36mexit>type EXIT to exit \033[0m\n"
+echo
+while true; do
+printf "\033[1;34mENTER YOUR OPTION HEAR==> \033[0m"
+read nona
+
+if [[ $nona == 'enter' || $nona == 'ENTER' ]]; then
+echo
+printf "\033[1;43mCHAPTER-7 \033[0m\n"
+echo
+echo -e "
+(#) in these chapter we can learn about how to modify your tool ok
+then we can get started:-)" | pv -qL 100 | lolcat
+
+echo -e "
+
+██╗░░██╗░█████╗░██╗
+██║░░██║██╔══██╗██║
+███████║███████║██║
+██╔══██║██╔══██║██║
+██║░░██║██║░░██║██║
+╚═╝░░╚═╝╚═╝░░╚═╝╚═╝" | pv -qL 500 | lolcat
+
+echo -e "
+if you want to do like these☝☝☝☝ 1st you want to open these link👇👇
+
+https://fsymbols.com/text-art/
+
+and then scrol down then u can see a text typing portion there type
+things that you want then it will gave u many designed text ok
+select a text from it and come back to your script and type:-"| pv -qL 100 | lolcat
+
+echo -e "
+type 'echo -e'
+paste your text there and close the double couts and type | and then  pv -qL 500
+pv -qL 500 help to make the text slow ok when u type pv -qL 400 it
+become more slower like that ok
+and then put these | and then lolcat
+lolcat is used to give rainbow colour to it ok
+when u not give lolcat text will become white colour ok" | pv -qL 100 | lolcat
+break
+
+elif [[ $nona == 'exit' || $nona == 'EXIT' ]]; then
+echo
+printf "\033[1;31mYOU ARE EXITED \033[0m\n"
+exit 1
+
+else
+printf "\033[1;41m[!] PLEASE SELECT A VALID OPTION \033[0m\n"
+fi
+done
+
+
+
+
+
+
+
+
 
 
 
