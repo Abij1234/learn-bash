@@ -327,6 +327,59 @@ else
 printf "\033[1;41m[!] PLEASE SELECT A VALID OPTION \033[0m\n"
 fi
 done
+echo
+printf "\033[1;36menter>type ENTER to continue \033[0m\n"
+printf "\033[1;36mexit>type EXIT to exit \033[0m\n"
+echo
+while true; do
+printf "\033[1;36mENTER YOUR OPTION==> \033[0m"
+read nonam
+
+if [[ $nonam == 'enter' || $nonam == 'ENTER' ]]; then
+echo
+printf "\033[1;43mCHAPTER-8 \033[0m\n"
+echo
+echo -e "
+in these chapter we can learn about colour code ok" | pv -qL 100 | lolcat
+echo
+echo -e "
+first we can learn how to give colour to our text ok
+	30 >> black
+	31 >> red
+	32 >> green
+	33 >> brown
+	34 >> blue
+	35 >> purple
+	36 >> cyan
+it is the differnt colour codes,before starting modefication you want to type '\033[1;<you colour code>m<you wanted text'
+and after your text end the modefication by '\033[0m\n' ok" | pv -qL 100 | lolcat
+echo
+echo -e "
+then we can study how can we give colour to background its also like these but difference in colour code,then we can get started
+	40 >> black
+	41 >> red
+	42 >> green
+	43 >> brown
+	44 >> blue
+	45 >> purple
+	46 >> cyan
+it is the background colour codes,then like text colour code start modefication by '\033[1;<code>m<text hear>'
+and then end the modefication by '\033[0m\n'. the starting and ending of the modefication is same as text colour code ok only the code is different" | pv -qL 100 | lolcat
+break
+
+elif [[ $nonam == 'exit' || $nonam == 'EXIT' ]]; then
+echo
+printf "\033[1;31mYOU ARE EXITED \033[0m\n"
+exit 1
+
+else
+echo
+printf "\033[1;41m[!] please select a valid option \033[0m\n"
+fi
+done
+
+
+
 
 
 
