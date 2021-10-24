@@ -365,6 +365,7 @@ then we can study how can we give colour to background its also like these but d
 	46 >> cyan
 it is the background colour codes,then like text colour code start modefication by '\033[1;<code>m<text hear>'
 and then end the modefication by '\033[0m\n'. the starting and ending of the modefication is same as text colour code ok only the code is different" | pv -qL 100 | lolcat
+echo
 break
 
 elif [[ $nonam == 'exit' || $nonam == 'EXIT' ]]; then
@@ -378,7 +379,44 @@ printf "\033[1;41m[!] please select a valid option \033[0m\n"
 fi
 done
 
+printf "\033[1;36menter>TYPE 'ENTER' TO CONTINUE \033[0m\n"
+printf "\033[1;36mexit>type 'EXIT' to exit \033[0m\n"
+echo
+while true; do
+printf "\033[1;34mENTER YOUR OPTION HEAR==> \033[0m"
+read lol
+if [[ $lol == 'enter' || $lol == 'ENTER' ]]; then
+echo
+printf "\033[1;43mCHAPTER-9 \033[0m\n"
+echo
+echo -e "
+in these chapter we can learn about 'while loop's' ok" | pv -qL 500 | lolcat
+echo
+echo -e "#what is mean by loop's?
+ans:-The bash while loop is a control flow statement that allows code or commands to be executed repeatedly based on a given condition" | pv -qL 100 | lolcat
+echo
+echo -e "
+(#)syntax of while loop
+-------------------------
+while [ condition ]
+do
+	programe1
+	programe2
+	.............
+done
 
+(it is the syntax of while loop)" | pv -qL 100 | lolcat
+break
+elif [[ $lol == 'exit' || $lol == 'EXIT' ]]; then
+echo
+printf "\033[1;31mYOU ARE EXITED \033[0m\n"
+exit 1
+
+else
+echo
+printf "\033[1;31m[!] PLEASE SELECT A VALID OPTION \033[0m\n"
+fi
+done
 
 
 
